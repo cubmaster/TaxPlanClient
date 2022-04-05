@@ -1,1 +1,18 @@
-started
+
+
+<button type="button" class="btn btn-primary" (click)="NewScenario()">New Scenario</button>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col"  *ngFor="let scenario of scenarios">
+      <div class="card" style="width: 18rem;">
+        <img src="https://picsum.photos/100/100" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{scenario.name}}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a  [routerLink]="['/scenario',scenario._id]" class="btn btn-primary">Edit</a>
+          <button class="btn btn-primary" (click)="delete(scenario)">Delete</button>
+        </div>
+      </div>
+
+  </div>
+</div>

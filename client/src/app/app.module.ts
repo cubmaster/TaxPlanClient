@@ -14,6 +14,8 @@ import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 
 import {DragDropModule} from "@angular/cdk/drag-drop";
+import { ScenarioComponent } from './scenario/scenario.component';
+import { ForecastEditorComponent } from './forecast-editor/forecast-editor.component';
 
 
 
@@ -25,6 +27,8 @@ import {DragDropModule} from "@angular/cdk/drag-drop";
     AppComponent,
 
     HomeComponent,
+     ScenarioComponent,
+     ForecastEditorComponent,
 
   ],
   imports: [

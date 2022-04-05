@@ -1,16 +1,17 @@
 import fs from 'fs'
 import path from 'path'
-import notebook from "../models/notebook";
+import scenario from "../models/scenario";
 import role from "../models/role";
 import user from "../models/user";
-import codeSnipit from "../models/codeSnipit";
+import forecast from "../models/forecast";
 
 
 
 export function initModules(){
-    notebook();
+    forecast();
+    scenario();
     user();
     role();
-    codeSnipit();
+
 
 }
